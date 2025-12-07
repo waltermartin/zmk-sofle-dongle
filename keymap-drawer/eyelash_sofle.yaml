@@ -21,18 +21,18 @@ layers:
   - U
   - {t: '=', s: +}
   - $$mdi:arrow-down-bold$$
-  - Q
+  - X
   - L
   - D
-  - P
-  - X
-  - $$mdi:backspace-reverse-outline$$
   - W
+  - Z
+  - $$mdi:backspace-reverse-outline$$
+  - B
   - C
   - I
   - A
   - E
-  - {t: ;, s: ':'}
+  - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - K
   - H
@@ -42,15 +42,15 @@ layers:
   - F
   - layer1
   - {t: '''', s: '"'}
-  - {t: '-', s: _}
   - {t: ',', s: <}
+  - {t: ;, s: ':'}
   - .
   - {t: /, s: '?'}
   - $$mdi:arrow-right-bold$$
   - J
   - M
   - G
-  - B
+  - P
   - V
   - '2'
   - $$mdi:volume-off$$
@@ -60,9 +60,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - KP NUMLOCK
-  - R
   - $$mdi:apple-keyboard-shift$$
+  - R
+  - KP NUMLOCK
   - {t: \, s: '|'}
   - END
   layer1:
