@@ -11,7 +11,7 @@ manifest:
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
-    - name: zmk-config
+    - name: zmk
       remote: urob
       revision: main
       import: app/west.yml
