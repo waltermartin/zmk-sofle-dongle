@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware    
+    # - name: zmkfirmware
+      #url-base: https://github.com/zmkfirmware    
     - name: urob
       url-base: https://github.com/urob
     - name: gpeye
@@ -21,10 +21,10 @@ manifest:
     - name: mario-peripheral-animation
       remote: gpeye
       revision: main 
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
-      import: app/west.yml
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: v0.3.0
+    #   import: app/west.yml
     - name: prospector-zmk-module                # <--- and these
       remote: tokyo2006                          # <---
       revision: micro_spi2  
