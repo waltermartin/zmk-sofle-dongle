@@ -260,3 +260,94 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [15, 16]
+  k: $$mdi:keyboard-esc$$
+  l: [LAYER0, layer1, '3']
+- p: [16, 17]
+  k: '&smart_mouse'
+  l: [LAYER0, layer1, '3']
+- p: [30, 31]
+  k: '&hml LS(LALT)TAB'
+  l: [LAYER0, layer1, '3']
+- p: [44, 46]
+  k: Ctl+X
+  l: [LAYER0, layer1, '3']
+- p: [44, 45]
+  k: Ctl+INS
+  l: [LAYER0, layer1, '3']
+- p: [45, 46]
+  k: Sft+INS
+  l: [LAYER0, layer1, '3']
+- p: [23, 24]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [LAYER0, layer1, '3']
+- p: [24, 25]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [LAYER0, layer1, '3']
+- p: [37, 38]
+  k: <
+  l: [layer1]
+- p: [38, 39]
+  k: '>'
+  l: [layer1]
+- p: [49, 50]
+  k: {h: '[', s: '{'}
+  l: [LAYER0, '3']
+- p: [50, 51]
+  k: {h: ']', s: '}'}
+  l: [LAYER0, '3']
+- p: [49, 50]
+  k: '{'
+  l: [layer1]
+- p: [50, 51]
+  k: '}'
+  l: [layer1]
+- p: [15, 30]
+  k: '@'
+  l: [LAYER0, layer1, '3']
+- p: [16, 31]
+  k: '#'
+  l: [LAYER0, layer1, '3']
+- p: [17, 32]
+  k: $
+  l: [LAYER0, layer1, '3']
+- p: [18, 33]
+  k: '%'
+  l: [LAYER0, layer1, '3']
+- p: [30, 44]
+  k: {t: '`', s: '~'}
+  l: [LAYER0, layer1, '3']
+- p: [31, 45]
+  k: {t: \, s: '|'}
+  l: [LAYER0, layer1, '3']
+- p: [32, 46]
+  k: {h: '=', s: +}
+  l: [LAYER0, layer1, '3']
+- p: [33, 47]
+  k: '~'
+  l: [LAYER0, layer1, '3']
+- p: [22, 36]
+  k: ^
+  l: [LAYER0, layer1, '3']
+- p: [23, 37]
+  k: +
+  l: [LAYER0, layer1, '3']
+- p: [24, 38]
+  k: '*'
+  l: [LAYER0, layer1, '3']
+- p: [25, 39]
+  k: '&'
+  l: [LAYER0, layer1, '3']
+- p: [36, 48]
+  k: _
+  l: [LAYER0, layer1, '3']
+- p: [37, 49]
+  k: {h: '-', s: _}
+  l: [LAYER0, layer1, '3']
+- p: [38, 50]
+  k: {t: /, s: '?'}
+  l: [LAYER0, layer1, '3']
+- p: [39, 51]
+  k: '|'
+  l: [LAYER0, layer1, '3']
