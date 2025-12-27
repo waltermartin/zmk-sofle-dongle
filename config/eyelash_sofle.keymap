@@ -3,7 +3,7 @@
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <include/zmk-helpers/helper.h> // Requires zmk-helpers module
+/* #include <include/zmk-helpers/helper.h> // Requires zmk-helpers module */
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
