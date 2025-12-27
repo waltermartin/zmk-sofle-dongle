@@ -3,9 +3,7 @@
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <behaviors.dtsi>
-#include <behaviors/num_word.dtsi> // Requires zmk-auto-layer module.
-/* #include <zmk-helpers/helper.h> // Requires zmk-helpers module. */
+#include <include/zmk-helpers/helper.h> // Requires zmk-helpers module
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -71,17 +69,6 @@ ZMK_HOLD_TAP(hmr,
 )
 /* End Homerow mods */
 
-// Hack: Make HRM combos tap-only (cf, ZMK issue #544).
-#define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
-  MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
-  ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
-
-/* Combos, leader key sequences, mouse emulation */
-
-#include "combos.dtsi" // Must be sourced after HRM-combo hack.
-#include "leader.dtsi"
-#include "mouse.dtsi"
-
 / {
     zip_scroll_scaler: zip_scroll_scaler {
         compatible = "zmk,input-processor-scaler";
@@ -124,11 +111,11 @@ ZMK_HOLD_TAP(hmr,
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1            &kp N2             &kp N3         &kp N4      &kp N5       &kp UP_ARROW     &kp N6           &kp N7  &kp N8         &kp N9    &kp N0   &kp KP_NUMLOCK
-&kp TAB     &kp Q             &kp Y              &kp O          &kp U       &kp EQUAL    &kp DOWN_ARROW   &kp X            &kp L   &kp D          &kp W     &kp Z    &kp DELETE
-&kp B       &kp C             &kp I              &kp A          &kp E       &kp MINUS    &kp LEFT_ARROW   &kp K            &kp H   &kp T          &kp N     &kp S    &kp F
-&mo 1       &kp SQT           &kp COMMA          &kp SEMICOLON  &kp PERIOD  &kp SLASH    &kp RIGHT_ARROW  &kp J            &kp M   &kp G          &kp P     &kp V    &mo 2
-&kp C_MUTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME       &kp SPACE   &kp RET      &kp ENTER        &kp RIGHT_SHIFT  &kp R   &kp BACKSPACE  &kp BSLH  &kp END
+&kp ESC     &kp N1            &kp N2             &kp N3         &kp N4          &kp N5       &kp UP_ARROW     &kp N6           &kp N7          &kp N8         &kp N9        &kp N0   &kp KP_NUMLOCK
+&kp TAB     &kp Q             &kp Y              &kp O          &kp U           &kp EQUAL    &kp DOWN_ARROW   &kp X            &kp L           &kp D          &kp W         &kp Z    &kp DELETE
+&kp B       &hml LGUI  C      &hml LALT I        &hml LSHFT A   &hmr LCTRL E    &kp MINUS    &kp LEFT_ARROW   &kp K            &hmr LCTRL H    &hmr RSHFT T   &hmr RALT N   &hmr LGUI S    &kp F
+&mo 1       &kp SQT           &kp COMMA          &kp SEMICOLON  &kp PERIOD      &kp SLASH    &kp RIGHT_ARROW  &kp J            &kp M           &kp G          &kp P         &kp V    &mo 2
+&kp C_MUTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME       &kp SPACE       &kp RET      &kp ENTER        &kp RIGHT_SHIFT  &kp R           &kp BACKSPACE  &kp BSLH      &kp END
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
