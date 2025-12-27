@@ -28,17 +28,17 @@ layers:
   - Z
   - $$mdi:backspace-reverse-outline$$
   - B
-  - {t: C, h: LGUI}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - '&hml LGUI C'
+  - '&hml LALT I'
+  - '&hml LSHFT A'
+  - '&hmr LCTRL E'
   - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - K
-  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: N, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: LGUI}
+  - '&hmr LCTRL H'
+  - '&hmr RSHFT T'
+  - '&hmr RALT N'
+  - '&hmr LGUI S'
   - F
   - layer1
   - {t: '''', s: '"'}
