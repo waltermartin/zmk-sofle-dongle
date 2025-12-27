@@ -59,6 +59,8 @@
 
 /* ZMK_LAYER */
 
+#include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi> // Requires zmk-auto-layer module
 #define ZMK_LAYER(...) CONCAT(ZMK_LAYER_, VARGS(__VA_ARGS__))(__VA_ARGS__)
 #define ZMK_LAYER_2(_name, layout) \
     / { \

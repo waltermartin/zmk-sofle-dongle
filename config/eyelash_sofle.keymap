@@ -111,10 +111,10 @@ ZMK_HOLD_TAP(hmr,
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1            &kp N2             &kp N3         &kp N4          &kp N5       &kp UP_ARROW     &kp N6           &kp N7          &kp N8         &kp N9        &kp N0   &kp KP_NUMLOCK
-&kp TAB     &kp Q             &kp Y              &kp O          &kp U           &kp EQUAL    &kp DOWN_ARROW   &kp X            &kp L           &kp D          &kp W         &kp Z    &kp DELETE
-&kp B       &hml LGUI  C      &hml LALT I        &hml LSHFT A   &hmr LCTRL E    &kp MINUS    &kp LEFT_ARROW   &kp K            &hmr LCTRL H    &hmr RSHFT T   &hmr RALT N   &hmr LGUI S    &kp F
-&mo 1       &kp SQT           &kp COMMA          &kp SEMICOLON  &kp PERIOD      &kp SLASH    &kp RIGHT_ARROW  &kp J            &kp M           &kp G          &kp P         &kp V    &mo 2
+&kp ESC     &kp N1            &kp N2             &kp N3         &kp N4          &kp N5       &kp UP_ARROW     &kp N6           &kp N7          &kp N8         &kp N9        &kp N0       &kp KP_NUMLOCK
+&kp TAB     &kp Q             &kp Y              &kp O          &kp U           &kp EQUAL    &kp DOWN_ARROW   &kp X            &kp L           &kp D          &kp W         &kp Z        &kp DELETE
+&kp B       &hml LGUI  C      &hml LALT I        &hml LSHFT A   &hmr LCTRL E    &kp MINUS    &kp LEFT_ARROW   &kp K            &hmr LCTRL H    &hmr RSHFT T   &hmr RALT N   &hmr LGUI S  &kp F
+&mo 1       &kp SQT           &kp COMMA          &kp SEMICOLON  &kp PERIOD      &kp SLASH    &kp RIGHT_ARROW  &kp J            &kp M           &kp G          &kp P         &kp V        &mo 2
 &kp C_MUTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME       &kp SPACE       &kp RET      &kp ENTER        &kp RIGHT_SHIFT  &kp R           &kp BACKSPACE  &kp BSLH      &kp END
             >;
 
